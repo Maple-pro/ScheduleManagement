@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            DevExpress.XtraScheduler.TimeRuler timeRuler1 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler2 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler3 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler25 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler26 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler27 = new DevExpress.XtraScheduler.TimeRuler();
             this.splitContainerControl = new DevExpress.XtraEditors.SplitContainerControl();
             this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
             this.mailGroup = new DevExpress.XtraNavBar.NavBarGroup();
@@ -48,6 +48,9 @@
             this.schedulerSplitContainerControl = new DevExpress.XtraEditors.SplitContainerControl();
             this.schedulerControl = new DevExpress.XtraScheduler.SchedulerControl();
             this.schedulerStorage = new DevExpress.XtraScheduler.SchedulerDataStorage(this.components);
+            this.appointmentsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.timeScheduleDBDataSet = new TimeSchedule.TimeScheduleDBDataSet();
+            this.resourcesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dateNavigator = new DevExpress.XtraScheduler.DateNavigator();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
@@ -107,6 +110,7 @@
             this.printPreviewItem1 = new DevExpress.XtraScheduler.UI.PrintPreviewItem();
             this.printItem1 = new DevExpress.XtraScheduler.UI.PrintItem();
             this.printPageSetupItem1 = new DevExpress.XtraScheduler.UI.PrintPageSetupItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonImageCollectionLarge = new DevExpress.Utils.ImageCollection(this.components);
             this.calendarToolsRibbonPageCategory1 = new DevExpress.XtraScheduler.UI.CalendarToolsRibbonPageCategory();
             this.appointmentRibbonPage1 = new DevExpress.XtraScheduler.UI.AppointmentRibbonPage();
@@ -128,17 +132,14 @@
             this.skinsRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.helpRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.helpRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
+            this.Management = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.schedulerBarController1 = new DevExpress.XtraScheduler.UI.SchedulerBarController(this.components);
-            this.timeScheduleDBDataSet = new TimeSchedule.TimeScheduleDBDataSet();
-            this.appointmentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.appointmentsTableAdapter = new TimeSchedule.TimeScheduleDBDataSetTableAdapters.AppointmentsTableAdapter();
-            this.appointmentsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.resourcesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.resourcesTableAdapter = new TimeSchedule.TimeScheduleDBDataSetTableAdapters.ResourcesTableAdapter();
-            this.appointmentsBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.timeScheduleDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.appointmentsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.popupControlContainer3 = new DevExpress.XtraBars.PopupControlContainer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl)).BeginInit();
             this.splitContainerControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
@@ -148,6 +149,9 @@
             this.schedulerSplitContainerControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeScheduleDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourcesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNavigator)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNavigator.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
@@ -162,13 +166,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeScheduleDBDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourcesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeScheduleDBDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer3)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl
@@ -294,6 +293,7 @@
             this.schedulerSplitContainerControl.Location = new System.Drawing.Point(0, 0);
             this.schedulerSplitContainerControl.Name = "schedulerSplitContainerControl";
             this.schedulerSplitContainerControl.Panel1.Controls.Add(this.schedulerControl);
+            this.schedulerSplitContainerControl.Panel1.Controls.Add(this.popupControlContainer3);
             this.schedulerSplitContainerControl.Panel1.Text = "Panel1";
             this.schedulerSplitContainerControl.Panel2.Controls.Add(this.dateNavigator);
             this.schedulerSplitContainerControl.Panel2.Text = "Panel2";
@@ -312,16 +312,18 @@
             this.schedulerControl.Start = new System.DateTime(2020, 6, 16, 0, 0, 0, 0);
             this.schedulerControl.TabIndex = 0;
             this.schedulerControl.Text = "schedulerControl1";
-            this.schedulerControl.Views.DayView.TimeRulers.Add(timeRuler1);
+            this.schedulerControl.Views.DayView.TimeRulers.Add(timeRuler25);
             this.schedulerControl.Views.FullWeekView.Enabled = true;
-            this.schedulerControl.Views.FullWeekView.TimeRulers.Add(timeRuler2);
-            this.schedulerControl.Views.WorkWeekView.TimeRulers.Add(timeRuler3);
+            this.schedulerControl.Views.FullWeekView.TimeRulers.Add(timeRuler26);
+            this.schedulerControl.Views.WorkWeekView.TimeRulers.Add(timeRuler27);
+            this.schedulerControl.EditAppointmentFormShowing += new DevExpress.XtraScheduler.AppointmentFormEventHandler(this.schedulerControl_EditAppointmentFormShowing);
             // 
             // schedulerStorage
             // 
             // 
             // 
             // 
+            this.schedulerStorage.Appointments.CustomFieldMappings.Add(new DevExpress.XtraScheduler.AppointmentCustomFieldMapping("Contacts", "CustomField1"));
             this.schedulerStorage.Appointments.DataSource = this.appointmentsBindingSource3;
             this.schedulerStorage.Appointments.Mappings.AllDay = "AllDay";
             this.schedulerStorage.Appointments.Mappings.Description = "Description";
@@ -347,6 +349,21 @@
             this.schedulerStorage.AppointmentsInserted += new DevExpress.XtraScheduler.PersistentObjectsEventHandler(this.schedulerStorage_AppointmentsChanged);
             this.schedulerStorage.AppointmentsChanged += new DevExpress.XtraScheduler.PersistentObjectsEventHandler(this.schedulerStorage_AppointmentsChanged);
             this.schedulerStorage.AppointmentsDeleted += new DevExpress.XtraScheduler.PersistentObjectsEventHandler(this.schedulerStorage_AppointmentsChanged);
+            // 
+            // appointmentsBindingSource3
+            // 
+            this.appointmentsBindingSource3.DataMember = "Appointments";
+            this.appointmentsBindingSource3.DataSource = this.timeScheduleDBDataSet;
+            // 
+            // timeScheduleDBDataSet
+            // 
+            this.timeScheduleDBDataSet.DataSetName = "TimeScheduleDBDataSet";
+            this.timeScheduleDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // resourcesBindingSource
+            // 
+            this.resourcesBindingSource.DataMember = "Resources";
+            this.resourcesBindingSource.DataSource = this.timeScheduleDBDataSet;
             // 
             // dateNavigator
             // 
@@ -418,10 +435,11 @@
             this.saveScheduleItem1,
             this.printPreviewItem1,
             this.printItem1,
-            this.printPageSetupItem1});
+            this.printPageSetupItem1,
+            this.barButtonItem1});
             this.ribbonControl.LargeImages = this.ribbonImageCollectionLarge;
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 103;
+            this.ribbonControl.MaxItemId = 104;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.PageCategories.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageCategory[] {
             this.calendarToolsRibbonPageCategory1});
@@ -431,7 +449,8 @@
             this.homeRibbonPage1,
             this.viewRibbonPage1,
             this.ribbonPageSkins,
-            this.helpRibbonPage});
+            this.helpRibbonPage,
+            this.Management});
             this.ribbonControl.QuickToolbarItemLinks.Add(this.iHelp);
             this.ribbonControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemDuration1,
@@ -807,6 +826,17 @@
             this.printPageSetupItem1.Id = 102;
             this.printPageSetupItem1.Name = "printPageSetupItem1";
             // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.ActAsDropDown = true;
+            this.barButtonItem1.ButtonStyle = DevExpress.XtraBars.BarButtonStyle.DropDown;
+            this.barButtonItem1.Caption = "Gantt View";
+            this.barButtonItem1.Id = 103;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick_1);
+            // 
             // ribbonImageCollectionLarge
             // 
             this.ribbonImageCollectionLarge.ImageSize = new System.Drawing.Size(32, 32);
@@ -882,7 +912,6 @@
             // appointmentRibbonPageGroup1
             // 
             this.appointmentRibbonPageGroup1.CaptionButtonVisible = DevExpress.Utils.DefaultBoolean.False;
-            this.appointmentRibbonPageGroup1.ItemLinks.Add(this.newAppointmentItem1);
             this.appointmentRibbonPageGroup1.ItemLinks.Add(this.newRecurringAppointmentItem1);
             this.appointmentRibbonPageGroup1.Name = "appointmentRibbonPageGroup1";
             // 
@@ -984,6 +1013,19 @@
             this.helpRibbonPageGroup.Name = "helpRibbonPageGroup";
             this.helpRibbonPageGroup.Text = "Help";
             // 
+            // Management
+            // 
+            this.Management.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.Management.Name = "Management";
+            this.Management.Text = "Management";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Program Management";
+            // 
             // ribbonStatusBar
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.siStatus);
@@ -1038,48 +1080,28 @@
             this.schedulerBarController1.BarItems.Add(this.printPageSetupItem1);
             this.schedulerBarController1.Control = this.schedulerControl;
             // 
-            // timeScheduleDBDataSet
-            // 
-            this.timeScheduleDBDataSet.DataSetName = "TimeScheduleDBDataSet";
-            this.timeScheduleDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // appointmentsBindingSource
-            // 
-            this.appointmentsBindingSource.DataMember = "Appointments";
-            this.appointmentsBindingSource.DataSource = this.timeScheduleDBDataSet;
-            // 
             // appointmentsTableAdapter
             // 
             this.appointmentsTableAdapter.ClearBeforeFill = true;
             // 
-            // appointmentsBindingSource1
-            // 
-            this.appointmentsBindingSource1.DataMember = "Appointments";
-            this.appointmentsBindingSource1.DataSource = this.timeScheduleDBDataSet;
-            // 
-            // resourcesBindingSource
-            // 
-            this.resourcesBindingSource.DataMember = "Resources";
-            this.resourcesBindingSource.DataSource = this.timeScheduleDBDataSet;
-            // 
             // resourcesTableAdapter
             // 
             this.resourcesTableAdapter.ClearBeforeFill = true;
-            // 
-            // appointmentsBindingSource2
-            // 
-            this.appointmentsBindingSource2.DataMember = "Appointments";
-            this.appointmentsBindingSource2.DataSource = this.timeScheduleDBDataSet;
             // 
             // timeScheduleDBDataSetBindingSource
             // 
             this.timeScheduleDBDataSetBindingSource.DataSource = this.timeScheduleDBDataSet;
             this.timeScheduleDBDataSetBindingSource.Position = 0;
             // 
-            // appointmentsBindingSource3
+            // popupControlContainer3
             // 
-            this.appointmentsBindingSource3.DataMember = "Appointments";
-            this.appointmentsBindingSource3.DataSource = this.timeScheduleDBDataSet;
+            this.popupControlContainer3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.popupControlContainer3.Location = new System.Drawing.Point(117, 179);
+            this.popupControlContainer3.Name = "popupControlContainer3";
+            this.popupControlContainer3.Ribbon = this.ribbonControl;
+            this.popupControlContainer3.Size = new System.Drawing.Size(250, 130);
+            this.popupControlContainer3.TabIndex = 6;
+            this.popupControlContainer3.Visible = false;
             // 
             // Form1
             // 
@@ -1106,6 +1128,9 @@
             this.schedulerSplitContainerControl.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.schedulerControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerStorage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeScheduleDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.resourcesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNavigator.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNavigator)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
@@ -1121,13 +1146,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.timeScheduleDBDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resourcesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeScheduleDBDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1233,13 +1253,14 @@
         private DevExpress.XtraScheduler.UI.LayoutRibbonPageGroup layoutRibbonPageGroup1;
         private DevExpress.XtraScheduler.UI.SchedulerBarController schedulerBarController1;
         private TimeScheduleDBDataSet timeScheduleDBDataSet;
-        private System.Windows.Forms.BindingSource appointmentsBindingSource;
         private TimeScheduleDBDataSetTableAdapters.AppointmentsTableAdapter appointmentsTableAdapter;
-        private System.Windows.Forms.BindingSource appointmentsBindingSource1;
         private System.Windows.Forms.BindingSource resourcesBindingSource;
         private TimeScheduleDBDataSetTableAdapters.ResourcesTableAdapter resourcesTableAdapter;
         private System.Windows.Forms.BindingSource appointmentsBindingSource3;
-        private System.Windows.Forms.BindingSource appointmentsBindingSource2;
         private System.Windows.Forms.BindingSource timeScheduleDBDataSetBindingSource;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.Ribbon.RibbonPage Management;
+        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
+        private DevExpress.XtraBars.PopupControlContainer popupControlContainer3;
     }
 }

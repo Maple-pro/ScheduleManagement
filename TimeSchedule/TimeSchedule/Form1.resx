@@ -313,13 +313,10 @@
     <value>481, 17</value>
   </metadata>
   <metadata name="appointmentsBindingSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 103</value>
-  </metadata>
-  <metadata name="timeScheduleDBDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1460, 17</value>
+    <value>256, 62</value>
   </metadata>
   <metadata name="resourcesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>768, 60</value>
+    <value>508, 65</value>
   </metadata>
   <metadata name="appMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>656, 17</value>
@@ -503,6 +500,65 @@
         MjYxUCfoKVrlqmG6WMObLeGU0J1xYgfS6FLVbSqayb6qs6tobPdVtrqKkLsDTjAvISa2j7HhQqA0GugP
         dXQHGgSi2VHQeO7jqdWtXDXolk9N/lN1i8rIYG+oszMY8bk3ZLMzYKPd41Ozy8+NNj99aQm5O/CvqV0+
         ktrlI6ld/n2I3+wILvNaqp3MAAAAAElFTkSuQmCCCw==
+</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="barButtonItem1.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAAAHHRFWHRUaXRsZQBBbmFseXNp
+        cztEYXRhQW5hbHlzaXM75genhAAAArlJREFUOE+NktlOU1EUhk80Kg4voC+gIah3Rl/EIFOhAspQoLQg
+        CLYgSIzKKDMyCAUEFI2QUrVSAgKKLQoUgzdqEJFBKLTQ4XT4XXsfwHDnxXfWSc75v7Wy1xYqWi2mSt0n
+        PGxjTHIqWnexoPyxBWUtDDNKm80oafrIud8wPiQIwkGhqGYMAUCCHnt1H4EdAD8ngPyKEZDgkFBYNco/
+        uNw+ON1ewodtXr282n5YUdVkhErbDqVGh/LG1/CTRVs2LAkKKt9xAQ+5pNA2qy4Rtu8z+FpwCWm5bfi1
+        7OAoslrgI4GmdIgJDgtsFDbSFoUYLMjq+rdpzOVfxOrUWyiyW2Ce/o0e/RckZDTB5/Mjp9jEBEcETekw
+        H8nhJIFThIMEDqpzeRewQmH7lkihRkxMLZJgFvHp9RBJkH1vUBLcKh7iI5XVG3inpKxmFNfosfzZiM0t
+        DzYIFhqfXEB3/yzkqbUQvX7cuGtkgiDh5gMTvL4AEjObML9o58SrGnbCbtgcHlxNq8Wo+Se6+2YRraiG
+        R/Qho+iNJFDTi1v045rqEcYsC+jqs1KgDmt2N9Y23fhDRKdUY+TDPLpeWiFLruLnlJo3wARH9wSxyjqM
+        TEg/xVBgRnFKIvkkOqPOwWmth2M4Ex0RIfsF6YWv4PL48ER2Hq65VjjGNOiMPIvVDTfhwgrBQ5MlsBsV
+        aA8L5oes0OqZ4JigzDfw3XdGUpfpGtiH1OgID8GKzYVlxroLuisUel+IjYE46ELP8M0k5fYzwXEhVTvA
+        9264E4f28GDewVAQS0Enlii8RHXgtpwH20JPQ58v55tJzNkRJGv0/A7Yt8U9NhnUhcF+5tA2bA5pK+t0
+        wNez+ySBTNk9KFe/QIz6OaIJmaoXsvReRCmfcSLSnnLCU3fpQVhKDy4n6EwkCCLoNjHTP078JxQWDvwF
+        LODQ4n3/xxgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="barButtonItem1.ImageOptions.LargeImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        zfs3xfM1jSq3VtQAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="ribbonImageCollectionLarge.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -859,28 +915,31 @@
         ggs=
 </value>
   </data>
+  <metadata name="appointmentsBindingSource3.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>256, 62</value>
+  </metadata>
+  <metadata name="timeScheduleDBDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1460, 17</value>
+  </metadata>
+  <metadata name="timeScheduleDBDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1460, 17</value>
+  </metadata>
+  <metadata name="resourcesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>508, 65</value>
+  </metadata>
   <metadata name="schedulerBarController1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1240, 17</value>
   </metadata>
-  <metadata name="appointmentsBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 60</value>
-  </metadata>
   <metadata name="appointmentsTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>267, 60</value>
-  </metadata>
-  <metadata name="appointmentsBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>510, 60</value>
+    <value>18, 59</value>
   </metadata>
   <metadata name="resourcesTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>988, 60</value>
-  </metadata>
-  <metadata name="appointmentsBindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1201, 60</value>
+    <value>728, 67</value>
   </metadata>
   <metadata name="timeScheduleDBDataSetBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1459, 60</value>
+    <value>938, 69</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>95</value>
+    <value>145</value>
   </metadata>
 </root>

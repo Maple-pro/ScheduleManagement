@@ -39,5 +39,27 @@ namespace TimeSchedule
             appointmentsTableAdapter.Update(timeScheduleDBDataSet);
             timeScheduleDBDataSet.AcceptChanges();
         }
+
+        private void schedulerControl_EditAppointmentFormShowing(object sender, AppointmentFormEventArgs e)
+        {
+            DevExpress.XtraScheduler.SchedulerControl scheduler = ((DevExpress.XtraScheduler.SchedulerControl)(sender));
+            TimeSchedule.OutlookAppointmentForm form = new TimeSchedule.OutlookAppointmentForm(scheduler, e.Appointment, e.OpenRecurrenceForm);
+            try
+            {
+                e.DialogResult = form.ShowDialog();
+                e.Handled = true;
+            }
+            finally
+            {
+                form.Dispose();
+            }
+
+        }
+
+        private void barButtonItem1_ItemClick_1(object sender, ItemClickEventArgs e)
+        {
+            var form2 = new Form2();
+            form2.Show();
+        }
     }
 }

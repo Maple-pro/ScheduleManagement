@@ -33,5 +33,16 @@ namespace TimeSchedule.Properties {
                 return ((string)(this["TimeScheduleDBConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\GanttDatabase" +
+            ".mdf;Integrated Security=True;Connect Timeout=30")]
+        public string GanttDatabaseConnectionString {
+            get {
+                return ((string)(this["GanttDatabaseConnectionString"]));
+            }
+        }
     }
 }
