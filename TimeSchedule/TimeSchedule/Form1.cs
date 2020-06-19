@@ -61,5 +61,11 @@ namespace TimeSchedule
             var form2 = new Form2();
             form2.Show();
         }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            var accountManagement = new Form3();
+            accountManagement.ShowDialog();
+        }
     }
 }

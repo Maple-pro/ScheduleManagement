@@ -203,7 +203,7 @@
             this.ClientSize = new System.Drawing.Size(1014, 521);
             this.Controls.Add(this.splitContainerControl1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Project Management";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
             this.splitContainerControl1.ResumeLayout(false);

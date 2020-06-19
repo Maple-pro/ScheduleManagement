@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            DevExpress.XtraScheduler.TimeRuler timeRuler25 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler26 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler27 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler4 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler5 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler6 = new DevExpress.XtraScheduler.TimeRuler();
             this.splitContainerControl = new DevExpress.XtraEditors.SplitContainerControl();
             this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
             this.mailGroup = new DevExpress.XtraNavBar.NavBarGroup();
@@ -51,16 +51,18 @@
             this.appointmentsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.timeScheduleDBDataSet = new TimeSchedule.TimeScheduleDBDataSet();
             this.resourcesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dateNavigator = new DevExpress.XtraScheduler.DateNavigator();
+            this.popupControlContainer3 = new DevExpress.XtraBars.PopupControlContainer(this.components);
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
-            this.popupControlContainer2 = new DevExpress.XtraBars.PopupControlContainer(this.components);
-            this.buttonEdit = new DevExpress.XtraEditors.ButtonEdit();
-            this.iExit = new DevExpress.XtraBars.BarButtonItem();
-            this.popupControlContainer1 = new DevExpress.XtraBars.PopupControlContainer(this.components);
-            this.someLabelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.someLabelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
+            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
+            this.backstageViewTabItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.ribbonImageCollection = new DevExpress.Utils.ImageCollection(this.components);
+            this.iExit = new DevExpress.XtraBars.BarButtonItem();
             this.iHelp = new DevExpress.XtraBars.BarButtonItem();
             this.iAbout = new DevExpress.XtraBars.BarButtonItem();
             this.siStatus = new DevExpress.XtraBars.BarStaticItem();
@@ -128,18 +130,24 @@
             this.activeViewRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.ActiveViewRibbonPageGroup();
             this.timeScaleRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.TimeScaleRibbonPageGroup();
             this.layoutRibbonPageGroup1 = new DevExpress.XtraScheduler.UI.LayoutRibbonPageGroup();
+            this.Management = new DevExpress.XtraBars.Ribbon.RibbonPage();
+            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageSkins = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.skinsRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.helpRibbonPage = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.helpRibbonPageGroup = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.Management = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
+            this.dateNavigator = new DevExpress.XtraScheduler.DateNavigator();
+            this.appMenu = new DevExpress.XtraBars.Ribbon.ApplicationMenu(this.components);
+            this.popupControlContainer2 = new DevExpress.XtraBars.PopupControlContainer(this.components);
+            this.buttonEdit = new DevExpress.XtraEditors.ButtonEdit();
+            this.popupControlContainer1 = new DevExpress.XtraBars.PopupControlContainer(this.components);
+            this.someLabelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.someLabelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.schedulerBarController1 = new DevExpress.XtraScheduler.UI.SchedulerBarController(this.components);
             this.appointmentsTableAdapter = new TimeSchedule.TimeScheduleDBDataSetTableAdapters.AppointmentsTableAdapter();
             this.resourcesTableAdapter = new TimeSchedule.TimeScheduleDBDataSetTableAdapters.ResourcesTableAdapter();
             this.timeScheduleDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.popupControlContainer3 = new DevExpress.XtraBars.PopupControlContainer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl)).BeginInit();
             this.splitContainerControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
@@ -152,22 +160,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeScheduleDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.resourcesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
+            this.backstageViewControl1.SuspendLayout();
+            this.backstageViewClientControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollection)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDuration1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNavigator)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNavigator.CalendarTimeProperties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer2)).BeginInit();
             this.popupControlContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).BeginInit();
             this.popupControlContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollection)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDuration1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeScheduleDBDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer3)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl
@@ -312,10 +323,10 @@
             this.schedulerControl.Start = new System.DateTime(2020, 6, 16, 0, 0, 0, 0);
             this.schedulerControl.TabIndex = 0;
             this.schedulerControl.Text = "schedulerControl1";
-            this.schedulerControl.Views.DayView.TimeRulers.Add(timeRuler25);
+            this.schedulerControl.Views.DayView.TimeRulers.Add(timeRuler4);
             this.schedulerControl.Views.FullWeekView.Enabled = true;
-            this.schedulerControl.Views.FullWeekView.TimeRulers.Add(timeRuler26);
-            this.schedulerControl.Views.WorkWeekView.TimeRulers.Add(timeRuler27);
+            this.schedulerControl.Views.FullWeekView.TimeRulers.Add(timeRuler5);
+            this.schedulerControl.Views.WorkWeekView.TimeRulers.Add(timeRuler6);
             this.schedulerControl.EditAppointmentFormShowing += new DevExpress.XtraScheduler.AppointmentFormEventHandler(this.schedulerControl_EditAppointmentFormShowing);
             // 
             // schedulerStorage
@@ -365,29 +376,25 @@
             this.resourcesBindingSource.DataMember = "Resources";
             this.resourcesBindingSource.DataSource = this.timeScheduleDBDataSet;
             // 
-            // dateNavigator
+            // popupControlContainer3
             // 
-            this.dateNavigator.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.dateNavigator.DateTime = new System.DateTime(2020, 6, 16, 0, 0, 0, 0);
-            this.dateNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dateNavigator.EditValue = new System.DateTime(2020, 6, 16, 0, 0, 0, 0);
-            this.dateNavigator.FirstDayOfWeek = System.DayOfWeek.Sunday;
-            this.dateNavigator.Location = new System.Drawing.Point(0, 0);
-            this.dateNavigator.Name = "dateNavigator";
-            this.dateNavigator.SchedulerControl = this.schedulerControl;
-            this.dateNavigator.Size = new System.Drawing.Size(225, 509);
-            this.dateNavigator.TabIndex = 1;
+            this.popupControlContainer3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.popupControlContainer3.Location = new System.Drawing.Point(117, 179);
+            this.popupControlContainer3.Name = "popupControlContainer3";
+            this.popupControlContainer3.Ribbon = this.ribbonControl;
+            this.popupControlContainer3.Size = new System.Drawing.Size(250, 130);
+            this.popupControlContainer3.TabIndex = 6;
+            this.popupControlContainer3.Visible = false;
             // 
             // ribbonControl
             // 
-            this.ribbonControl.ApplicationButtonDropDownControl = this.appMenu;
+            this.ribbonControl.ApplicationButtonDropDownControl = this.backstageViewControl1;
             this.ribbonControl.ApplicationButtonText = null;
             this.ribbonControl.ExpandCollapseItem.Id = 0;
             this.ribbonControl.Images = this.ribbonImageCollection;
             this.ribbonControl.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl.SearchEditItem,
             this.ribbonControl.ExpandCollapseItem,
+            this.ribbonControl.SearchEditItem,
             this.iExit,
             this.iHelp,
             this.iAbout,
@@ -448,9 +455,9 @@
             this.fileRibbonPage1,
             this.homeRibbonPage1,
             this.viewRibbonPage1,
+            this.Management,
             this.ribbonPageSkins,
-            this.helpRibbonPage,
-            this.Management});
+            this.helpRibbonPage});
             this.ribbonControl.QuickToolbarItemLinks.Add(this.iHelp);
             this.ribbonControl.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemDuration1,
@@ -459,38 +466,93 @@
             this.ribbonControl.Size = new System.Drawing.Size(1177, 197);
             this.ribbonControl.StatusBar = this.ribbonStatusBar;
             // 
-            // appMenu
+            // backstageViewControl1
             // 
-            this.appMenu.BottomPaneControlContainer = this.popupControlContainer2;
-            this.appMenu.ItemLinks.Add(this.iExit);
-            this.appMenu.Name = "appMenu";
-            this.appMenu.Ribbon = this.ribbonControl;
-            this.appMenu.RightPaneControlContainer = this.popupControlContainer1;
-            this.appMenu.ShowRightPane = true;
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
+            this.backstageViewControl1.Items.Add(this.backstageViewTabItem1);
+            this.backstageViewControl1.Location = new System.Drawing.Point(238, 125);
+            this.backstageViewControl1.Name = "backstageViewControl1";
+            this.backstageViewControl1.OwnerControl = this.ribbonControl;
+            this.backstageViewControl1.SelectedTab = this.backstageViewTabItem1;
+            this.backstageViewControl1.SelectedTabIndex = 0;
+            this.backstageViewControl1.Size = new System.Drawing.Size(789, 466);
+            this.backstageViewControl1.TabIndex = 6;
             // 
-            // popupControlContainer2
+            // backstageViewClientControl1
             // 
-            this.popupControlContainer2.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.popupControlContainer2.Appearance.Options.UseBackColor = true;
-            this.popupControlContainer2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.popupControlContainer2.Controls.Add(this.buttonEdit);
-            this.popupControlContainer2.Location = new System.Drawing.Point(238, 289);
-            this.popupControlContainer2.Name = "popupControlContainer2";
-            this.popupControlContainer2.Ribbon = this.ribbonControl;
-            this.popupControlContainer2.Size = new System.Drawing.Size(118, 28);
-            this.popupControlContainer2.TabIndex = 3;
-            this.popupControlContainer2.Visible = false;
+            this.backstageViewClientControl1.Controls.Add(this.simpleButton1);
+            this.backstageViewClientControl1.Controls.Add(this.labelControl4);
+            this.backstageViewClientControl1.Controls.Add(this.labelControl3);
+            this.backstageViewClientControl1.Controls.Add(this.labelControl2);
+            this.backstageViewClientControl1.Controls.Add(this.labelControl1);
+            this.backstageViewClientControl1.Location = new System.Drawing.Point(201, 0);
+            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
+            this.backstageViewClientControl1.Size = new System.Drawing.Size(588, 466);
+            this.backstageViewClientControl1.TabIndex = 1;
             // 
-            // buttonEdit
+            // simpleButton1
             // 
-            this.buttonEdit.EditValue = "Some Text";
-            this.buttonEdit.Location = new System.Drawing.Point(3, 5);
-            this.buttonEdit.MenuManager = this.ribbonControl;
-            this.buttonEdit.Name = "buttonEdit";
-            this.buttonEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.buttonEdit.Size = new System.Drawing.Size(100, 24);
-            this.buttonEdit.TabIndex = 0;
+            this.simpleButton1.Location = new System.Drawing.Point(43, 172);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(124, 29);
+            this.simpleButton1.TabIndex = 4;
+            this.simpleButton1.Text = "Manage Account";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            // 
+            // labelControl4
+            // 
+            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl4.Appearance.Options.UseFont = true;
+            this.labelControl4.Location = new System.Drawing.Point(43, 124);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(76, 22);
+            this.labelControl4.TabIndex = 3;
+            this.labelControl4.Text = "userMail: ";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Options.UseFont = true;
+            this.labelControl3.Location = new System.Drawing.Point(106, 81);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(80, 22);
+            this.labelControl3.TabIndex = 2;
+            this.labelControl3.Text = "UserName";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Options.UseFont = true;
+            this.labelControl2.Location = new System.Drawing.Point(43, 81);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(57, 22);
+            this.labelControl2.TabIndex = 1;
+            this.labelControl2.Text = "Name: ";
+            // 
+            // labelControl1
+            // 
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Options.UseFont = true;
+            this.labelControl1.Location = new System.Drawing.Point(43, 26);
+            this.labelControl1.Name = "labelControl1";
+            this.labelControl1.Size = new System.Drawing.Size(141, 28);
+            this.labelControl1.TabIndex = 0;
+            this.labelControl1.Text = "Information";
+            // 
+            // backstageViewTabItem1
+            // 
+            this.backstageViewTabItem1.Caption = "Account";
+            this.backstageViewTabItem1.ContentControl = this.backstageViewClientControl1;
+            this.backstageViewTabItem1.ImageOptions.ItemNormal.Image = ((System.Drawing.Image)(resources.GetObject("backstageViewTabItem1.ImageOptions.ItemNormal.Image")));
+            this.backstageViewTabItem1.Name = "backstageViewTabItem1";
+            this.backstageViewTabItem1.Selected = true;
+            // 
+            // ribbonImageCollection
+            // 
+            this.ribbonImageCollection.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("ribbonImageCollection.ImageStream")));
+            this.ribbonImageCollection.Images.SetKeyName(0, "Ribbon_Exit_16x16.png");
+            this.ribbonImageCollection.Images.SetKeyName(1, "Ribbon_Content_16x16.png");
+            this.ribbonImageCollection.Images.SetKeyName(2, "Ribbon_Info_16x16.png");
             // 
             // iExit
             // 
@@ -501,43 +563,6 @@
             this.iExit.ImageOptions.ImageIndex = 6;
             this.iExit.ImageOptions.LargeImageIndex = 6;
             this.iExit.Name = "iExit";
-            // 
-            // popupControlContainer1
-            // 
-            this.popupControlContainer1.Appearance.BackColor = System.Drawing.Color.Transparent;
-            this.popupControlContainer1.Appearance.Options.UseBackColor = true;
-            this.popupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.popupControlContainer1.Controls.Add(this.someLabelControl2);
-            this.popupControlContainer1.Controls.Add(this.someLabelControl1);
-            this.popupControlContainer1.Location = new System.Drawing.Point(111, 197);
-            this.popupControlContainer1.Name = "popupControlContainer1";
-            this.popupControlContainer1.Ribbon = this.ribbonControl;
-            this.popupControlContainer1.Size = new System.Drawing.Size(76, 70);
-            this.popupControlContainer1.TabIndex = 2;
-            this.popupControlContainer1.Visible = false;
-            // 
-            // someLabelControl2
-            // 
-            this.someLabelControl2.Location = new System.Drawing.Point(3, 57);
-            this.someLabelControl2.Name = "someLabelControl2";
-            this.someLabelControl2.Size = new System.Drawing.Size(69, 18);
-            this.someLabelControl2.TabIndex = 0;
-            this.someLabelControl2.Text = "Some Info";
-            // 
-            // someLabelControl1
-            // 
-            this.someLabelControl1.Location = new System.Drawing.Point(3, 3);
-            this.someLabelControl1.Name = "someLabelControl1";
-            this.someLabelControl1.Size = new System.Drawing.Size(69, 18);
-            this.someLabelControl1.TabIndex = 0;
-            this.someLabelControl1.Text = "Some Info";
-            // 
-            // ribbonImageCollection
-            // 
-            this.ribbonImageCollection.ImageStream = ((DevExpress.Utils.ImageCollectionStreamer)(resources.GetObject("ribbonImageCollection.ImageStream")));
-            this.ribbonImageCollection.Images.SetKeyName(0, "Ribbon_Exit_16x16.png");
-            this.ribbonImageCollection.Images.SetKeyName(1, "Ribbon_Content_16x16.png");
-            this.ribbonImageCollection.Images.SetKeyName(2, "Ribbon_Info_16x16.png");
             // 
             // iHelp
             // 
@@ -984,6 +1009,19 @@
             this.layoutRibbonPageGroup1.ItemLinks.Add(this.changeSnapToCellsUIItem1);
             this.layoutRibbonPageGroup1.Name = "layoutRibbonPageGroup1";
             // 
+            // Management
+            // 
+            this.Management.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
+            this.ribbonPageGroup1});
+            this.Management.Name = "Management";
+            this.Management.Text = "Management";
+            // 
+            // ribbonPageGroup1
+            // 
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
+            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
+            this.ribbonPageGroup1.Text = "Program Management";
+            // 
             // ribbonPageSkins
             // 
             this.ribbonPageSkins.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -1013,19 +1051,6 @@
             this.helpRibbonPageGroup.Name = "helpRibbonPageGroup";
             this.helpRibbonPageGroup.Text = "Help";
             // 
-            // Management
-            // 
-            this.Management.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1});
-            this.Management.Name = "Management";
-            this.Management.Text = "Management";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem1);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "Program Management";
-            // 
             // ribbonStatusBar
             // 
             this.ribbonStatusBar.ItemLinks.Add(this.siStatus);
@@ -1034,6 +1059,83 @@
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbonControl;
             this.ribbonStatusBar.Size = new System.Drawing.Size(1177, 30);
+            // 
+            // dateNavigator
+            // 
+            this.dateNavigator.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.dateNavigator.DateTime = new System.DateTime(2020, 6, 16, 0, 0, 0, 0);
+            this.dateNavigator.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dateNavigator.EditValue = new System.DateTime(2020, 6, 16, 0, 0, 0, 0);
+            this.dateNavigator.FirstDayOfWeek = System.DayOfWeek.Sunday;
+            this.dateNavigator.Location = new System.Drawing.Point(0, 0);
+            this.dateNavigator.Name = "dateNavigator";
+            this.dateNavigator.SchedulerControl = this.schedulerControl;
+            this.dateNavigator.Size = new System.Drawing.Size(225, 509);
+            this.dateNavigator.TabIndex = 1;
+            // 
+            // appMenu
+            // 
+            this.appMenu.BottomPaneControlContainer = this.popupControlContainer2;
+            this.appMenu.ItemLinks.Add(this.iExit);
+            this.appMenu.Name = "appMenu";
+            this.appMenu.Ribbon = this.ribbonControl;
+            this.appMenu.RightPaneControlContainer = this.popupControlContainer1;
+            this.appMenu.ShowRightPane = true;
+            // 
+            // popupControlContainer2
+            // 
+            this.popupControlContainer2.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.popupControlContainer2.Appearance.Options.UseBackColor = true;
+            this.popupControlContainer2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.popupControlContainer2.Controls.Add(this.buttonEdit);
+            this.popupControlContainer2.Location = new System.Drawing.Point(238, 289);
+            this.popupControlContainer2.Name = "popupControlContainer2";
+            this.popupControlContainer2.Ribbon = this.ribbonControl;
+            this.popupControlContainer2.Size = new System.Drawing.Size(118, 28);
+            this.popupControlContainer2.TabIndex = 3;
+            this.popupControlContainer2.Visible = false;
+            // 
+            // buttonEdit
+            // 
+            this.buttonEdit.EditValue = "Some Text";
+            this.buttonEdit.Location = new System.Drawing.Point(3, 5);
+            this.buttonEdit.MenuManager = this.ribbonControl;
+            this.buttonEdit.Name = "buttonEdit";
+            this.buttonEdit.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.buttonEdit.Size = new System.Drawing.Size(100, 24);
+            this.buttonEdit.TabIndex = 0;
+            // 
+            // popupControlContainer1
+            // 
+            this.popupControlContainer1.Appearance.BackColor = System.Drawing.Color.Transparent;
+            this.popupControlContainer1.Appearance.Options.UseBackColor = true;
+            this.popupControlContainer1.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.popupControlContainer1.Controls.Add(this.someLabelControl2);
+            this.popupControlContainer1.Controls.Add(this.someLabelControl1);
+            this.popupControlContainer1.Location = new System.Drawing.Point(111, 197);
+            this.popupControlContainer1.Name = "popupControlContainer1";
+            this.popupControlContainer1.Ribbon = this.ribbonControl;
+            this.popupControlContainer1.Size = new System.Drawing.Size(76, 70);
+            this.popupControlContainer1.TabIndex = 2;
+            this.popupControlContainer1.Visible = false;
+            // 
+            // someLabelControl2
+            // 
+            this.someLabelControl2.Location = new System.Drawing.Point(3, 57);
+            this.someLabelControl2.Name = "someLabelControl2";
+            this.someLabelControl2.Size = new System.Drawing.Size(69, 18);
+            this.someLabelControl2.TabIndex = 0;
+            this.someLabelControl2.Text = "Some Info";
+            // 
+            // someLabelControl1
+            // 
+            this.someLabelControl1.Location = new System.Drawing.Point(3, 3);
+            this.someLabelControl1.Name = "someLabelControl1";
+            this.someLabelControl1.Size = new System.Drawing.Size(69, 18);
+            this.someLabelControl1.TabIndex = 0;
+            this.someLabelControl1.Text = "Some Info";
             // 
             // schedulerBarController1
             // 
@@ -1093,22 +1195,13 @@
             this.timeScheduleDBDataSetBindingSource.DataSource = this.timeScheduleDBDataSet;
             this.timeScheduleDBDataSetBindingSource.Position = 0;
             // 
-            // popupControlContainer3
-            // 
-            this.popupControlContainer3.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.popupControlContainer3.Location = new System.Drawing.Point(117, 179);
-            this.popupControlContainer3.Name = "popupControlContainer3";
-            this.popupControlContainer3.Ribbon = this.ribbonControl;
-            this.popupControlContainer3.Size = new System.Drawing.Size(250, 130);
-            this.popupControlContainer3.TabIndex = 6;
-            this.popupControlContainer3.Visible = false;
-            // 
             // Form1
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1177, 748);
+            this.Controls.Add(this.backstageViewControl1);
             this.Controls.Add(this.splitContainerControl);
             this.Controls.Add(this.popupControlContainer1);
             this.Controls.Add(this.popupControlContainer2);
@@ -1117,7 +1210,7 @@
             this.Name = "Form1";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.ribbonStatusBar;
-            this.Text = "Form1";
+            this.Text = "Time Scheduler";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl)).EndInit();
             this.splitContainerControl.ResumeLayout(false);
@@ -1131,9 +1224,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.appointmentsBindingSource3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeScheduleDBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.resourcesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
+            this.backstageViewControl1.ResumeLayout(false);
+            this.backstageViewClientControl1.ResumeLayout(false);
+            this.backstageViewClientControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollection)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDuration1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNavigator.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dateNavigator)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.appMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer2)).EndInit();
             this.popupControlContainer2.ResumeLayout(false);
@@ -1141,13 +1243,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer1)).EndInit();
             this.popupControlContainer1.ResumeLayout(false);
             this.popupControlContainer1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollection)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemDuration1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonImageCollectionLarge)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeScheduleDBDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.popupControlContainer3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1262,5 +1359,13 @@
         private DevExpress.XtraBars.Ribbon.RibbonPage Management;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
         private DevExpress.XtraBars.PopupControlContainer popupControlContainer3;
+        private DevExpress.XtraBars.Ribbon.BackstageViewControl backstageViewControl1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl1;
+        private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl3;
+        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl labelControl1;
     }
 }
