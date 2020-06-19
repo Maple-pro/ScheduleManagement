@@ -263,5 +263,4 @@ D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\ru\TimeSched
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\bin\Debug\GanttDatabase.mdf
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\bin\Debug\GanttDatabase_log.ldf
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.Form2.resources
-D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.csprojAssemblyReference.cache
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.Form3.resources

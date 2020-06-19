@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            DevExpress.XtraScheduler.TimeRuler timeRuler4 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler5 = new DevExpress.XtraScheduler.TimeRuler();
-            DevExpress.XtraScheduler.TimeRuler timeRuler6 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler10 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler11 = new DevExpress.XtraScheduler.TimeRuler();
+            DevExpress.XtraScheduler.TimeRuler timeRuler12 = new DevExpress.XtraScheduler.TimeRuler();
             this.splitContainerControl = new DevExpress.XtraEditors.SplitContainerControl();
             this.navBarControl = new DevExpress.XtraNavBar.NavBarControl();
             this.mailGroup = new DevExpress.XtraNavBar.NavBarGroup();
@@ -56,9 +56,6 @@
             this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
             this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.backstageViewTabItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
             this.ribbonImageCollection = new DevExpress.Utils.ImageCollection(this.components);
@@ -148,6 +145,9 @@
             this.appointmentsTableAdapter = new TimeSchedule.TimeScheduleDBDataSetTableAdapters.AppointmentsTableAdapter();
             this.resourcesTableAdapter = new TimeSchedule.TimeScheduleDBDataSetTableAdapters.ResourcesTableAdapter();
             this.timeScheduleDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.timeScheduleDBDataSet1 = new TimeSchedule.TimeScheduleDBDataSet();
+            this.listBoxControl1 = new DevExpress.XtraEditors.ListBoxControl();
+            this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl)).BeginInit();
             this.splitContainerControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl)).BeginInit();
@@ -179,6 +179,8 @@
             this.popupControlContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeScheduleDBDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeScheduleDBDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBoxControl1)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainerControl
@@ -323,10 +325,10 @@
             this.schedulerControl.Start = new System.DateTime(2020, 6, 16, 0, 0, 0, 0);
             this.schedulerControl.TabIndex = 0;
             this.schedulerControl.Text = "schedulerControl1";
-            this.schedulerControl.Views.DayView.TimeRulers.Add(timeRuler4);
+            this.schedulerControl.Views.DayView.TimeRulers.Add(timeRuler10);
             this.schedulerControl.Views.FullWeekView.Enabled = true;
-            this.schedulerControl.Views.FullWeekView.TimeRulers.Add(timeRuler5);
-            this.schedulerControl.Views.WorkWeekView.TimeRulers.Add(timeRuler6);
+            this.schedulerControl.Views.FullWeekView.TimeRulers.Add(timeRuler11);
+            this.schedulerControl.Views.WorkWeekView.TimeRulers.Add(timeRuler12);
             this.schedulerControl.EditAppointmentFormShowing += new DevExpress.XtraScheduler.AppointmentFormEventHandler(this.schedulerControl_EditAppointmentFormShowing);
             // 
             // schedulerStorage
@@ -480,10 +482,9 @@
             // 
             // backstageViewClientControl1
             // 
+            this.backstageViewClientControl1.Controls.Add(this.simpleButton2);
+            this.backstageViewClientControl1.Controls.Add(this.listBoxControl1);
             this.backstageViewClientControl1.Controls.Add(this.simpleButton1);
-            this.backstageViewClientControl1.Controls.Add(this.labelControl4);
-            this.backstageViewClientControl1.Controls.Add(this.labelControl3);
-            this.backstageViewClientControl1.Controls.Add(this.labelControl2);
             this.backstageViewClientControl1.Controls.Add(this.labelControl1);
             this.backstageViewClientControl1.Location = new System.Drawing.Point(201, 0);
             this.backstageViewClientControl1.Name = "backstageViewClientControl1";
@@ -492,42 +493,12 @@
             // 
             // simpleButton1
             // 
-            this.simpleButton1.Location = new System.Drawing.Point(43, 172);
+            this.simpleButton1.Location = new System.Drawing.Point(230, 334);
             this.simpleButton1.Name = "simpleButton1";
             this.simpleButton1.Size = new System.Drawing.Size(124, 29);
             this.simpleButton1.TabIndex = 4;
-            this.simpleButton1.Text = "Manage Account";
+            this.simpleButton1.Text = "Add an Account";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
-            // 
-            // labelControl4
-            // 
-            this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(43, 124);
-            this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(76, 22);
-            this.labelControl4.TabIndex = 3;
-            this.labelControl4.Text = "userMail: ";
-            // 
-            // labelControl3
-            // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(106, 81);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(80, 22);
-            this.labelControl3.TabIndex = 2;
-            this.labelControl3.Text = "UserName";
-            // 
-            // labelControl2
-            // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(43, 81);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(57, 22);
-            this.labelControl2.TabIndex = 1;
-            this.labelControl2.Text = "Name: ";
             // 
             // labelControl1
             // 
@@ -1195,6 +1166,27 @@
             this.timeScheduleDBDataSetBindingSource.DataSource = this.timeScheduleDBDataSet;
             this.timeScheduleDBDataSetBindingSource.Position = 0;
             // 
+            // timeScheduleDBDataSet1
+            // 
+            this.timeScheduleDBDataSet1.DataSetName = "TimeScheduleDBDataSet";
+            this.timeScheduleDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // listBoxControl1
+            // 
+            this.listBoxControl1.Location = new System.Drawing.Point(11, 81);
+            this.listBoxControl1.Name = "listBoxControl1";
+            this.listBoxControl1.Size = new System.Drawing.Size(343, 228);
+            this.listBoxControl1.TabIndex = 5;
+            // 
+            // simpleButton2
+            // 
+            this.simpleButton2.Location = new System.Drawing.Point(108, 334);
+            this.simpleButton2.Name = "simpleButton2";
+            this.simpleButton2.Size = new System.Drawing.Size(94, 29);
+            this.simpleButton2.TabIndex = 6;
+            this.simpleButton2.Text = "Refresh";
+            this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
+            // 
             // Form1
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.False;
@@ -1245,6 +1237,8 @@
             this.popupControlContainer1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.schedulerBarController1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timeScheduleDBDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timeScheduleDBDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.listBoxControl1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1363,9 +1357,9 @@
         private DevExpress.XtraBars.Ribbon.BackstageViewClientControl backstageViewClientControl1;
         private DevExpress.XtraBars.Ribbon.BackstageViewTabItem backstageViewTabItem1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
-        private DevExpress.XtraEditors.LabelControl labelControl4;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
         private DevExpress.XtraEditors.LabelControl labelControl1;
+        private TimeScheduleDBDataSet timeScheduleDBDataSet1;
+        private DevExpress.XtraEditors.ListBoxControl listBoxControl1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton2;
     }
 }

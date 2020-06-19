@@ -13,7 +13,7 @@ using DevExpress.XtraBars;
 using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraBars.Helpers;
 using DevExpress.XtraScheduler;
-
+using System.Data.SqlClient;
 
 namespace TimeSchedule
 {
@@ -23,6 +23,29 @@ namespace TimeSchedule
         {
             InitializeComponent();
             schedulerControl.Start = System.DateTime.Now;
+
+            /*
+            string strConn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\TimeScheduleDB.mdf;Integrated Security=True;Connect Timeout=30";
+            var conn = new SqlConnection(strConn);
+            conn.Open();
+            using (var cmd = conn.CreateCommand())
+            {
+                cmd.CommandText = "Select * from Resources";
+                var ds = new DataSet();
+                var adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(ds);
+                var userNames = new List<String>();
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    userNames.Add(row["ResourceName"] as string);
+                }
+                var names = userNames.ToArray();
+
+                listBoxControl1.Items.AddRange(names);
+            }
+            conn.Close();
+            */
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -66,6 +89,31 @@ namespace TimeSchedule
         {
             var accountManagement = new Form3();
             accountManagement.ShowDialog();
+        }
+
+        private void simpleButton2_Click(object sender, EventArgs e)
+        {
+            listBoxControl1.Items.Clear();
+
+            string strConn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\TimeScheduleDB.mdf;Integrated Security=True;Connect Timeout=30";
+            var conn = new SqlConnection(strConn);
+            conn.Open();
+            using (var cmd = conn.CreateCommand())
+            {
+                cmd.CommandText = "Select * from Resources";
+                var ds = new DataSet();
+                var adapter = new SqlDataAdapter(cmd);
+                adapter.Fill(ds);
+                var userNames = new List<String>();
+                foreach (DataRow row in ds.Tables[0].Rows)
+                {
+                    userNames.Add(row["ResourceName"] as string);
+                }
+                var names = userNames.ToArray();
+
+                listBoxControl1.Items.AddRange(names);
+            }
+            conn.Close();
         }
     }
 }
