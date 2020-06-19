@@ -24,13 +24,12 @@ namespace TimeSchedule
             InitializeComponent();
             schedulerControl.Start = System.DateTime.Now;
 
-            /*
-            string strConn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\TimeScheduleDB.mdf;Integrated Security=True;Connect Timeout=30";
-            var conn = new SqlConnection(strConn);
-            conn.Open();
-            using (var cmd = conn.CreateCommand())
+            using (var conn = new SqlConnection(getConnectionString()))
             {
-                cmd.CommandText = "Select * from Resources";
+                conn.Open();
+                string sql = "Select * from Resources";
+                var cmd = new SqlCommand(sql, conn);
+
                 var ds = new DataSet();
                 var adapter = new SqlDataAdapter(cmd);
                 adapter.Fill(ds);
@@ -42,10 +41,9 @@ namespace TimeSchedule
                 var names = userNames.ToArray();
 
                 listBoxControl1.Items.AddRange(names);
+                conn.Close();
             }
-            conn.Close();
-            */
-            
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -95,12 +93,12 @@ namespace TimeSchedule
         {
             listBoxControl1.Items.Clear();
 
-            string strConn = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\TimeScheduleDB.mdf;Integrated Security=True;Connect Timeout=30";
-            var conn = new SqlConnection(strConn);
-            conn.Open();
-            using (var cmd = conn.CreateCommand())
+            using (var conn = new SqlConnection(getConnectionString()))
             {
-                cmd.CommandText = "Select * from Resources";
+                conn.Open();
+                string sql = "Select * from Resources";
+                var cmd = new SqlCommand(sql, conn);
+                
                 var ds = new DataSet();
                 var adapter = new SqlDataAdapter(cmd);
                 adapter.Fill(ds);
@@ -112,8 +110,25 @@ namespace TimeSchedule
                 var names = userNames.ToArray();
 
                 listBoxControl1.Items.AddRange(names);
+                conn.Close();
             }
-            conn.Close();
+            
+        }
+
+        string getConnectionString()
+        {
+            return @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename = "
+                    + AppDomain.CurrentDomain.BaseDirectory
+                    + "TimeScheduleDB.mdf;"
+                    + @"Integrated Security = True; Connect Timeout = 30 ";
+        }
+
+        private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var selectUserForm = new Form4();
+            selectUserForm.Show();
+            // var achievementForm = new XtraForm1("114");
+            // achievementForm.Show();
         }
     }
 }
