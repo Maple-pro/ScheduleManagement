@@ -128,7 +128,32 @@ SELECT UniqueID, Type, StartDate, EndDate, AllDay, Subject, Location, Descriptio
               <Mapping SourceColumn="TimeZoneId" DataSetColumn="TimeZoneId" />
               <Mapping SourceColumn="CustomField1" DataSetColumn="CustomField1" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="TimeScheduleDBConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataByCount" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataByCount" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataByCount" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT  cast(year(startDate) as varchar(4))+'-'+cast(month(startDate) as varchar(2))+'-'+cast(day(startDate) as varchar(2))  tempdate,count(*) as n  FROM dbo.Appointments group by year(startDate),month(startDate),day(startDate)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="TimeScheduleDBConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy1" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetMonthByCount1" GeneratorSourceName="FillBy1" GetMethodModifier="Public" GetMethodName="GetMonthByCount1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetMonthByCount1" UserSourceName="FillBy1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT  cast(year(startDate) as varchar(4))+'-'+cast(month(startDate) as varchar(2)) tempdate,count(*) as n  FROM dbo.Appointments group by year(startDate),month(startDate)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="TimeScheduleDBConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy2" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetYearByCount" GeneratorSourceName="FillBy2" GetMethodModifier="Public" GetMethodName="GetYearByCount" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetYearByCount" UserSourceName="FillBy2">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT  cast(year(startDate) as varchar(4))  tempdate,count(*) as n  FROM dbo.Appointments group by year(startDate)</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ResourcesTableAdapter" GeneratorDataComponentClassName="ResourcesTableAdapter" Name="Resources" UserDataComponentName="ResourcesTableAdapter">
             <MainSource>
@@ -205,7 +230,7 @@ SELECT UniqueID, ResourceID, ResourceName, Color, Image, CustomField1 FROM Resou
   <xs:element name="TimeScheduleDBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="TimeScheduleDBDataSet" msprop:Generator_UserDSName="TimeScheduleDBDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Appointments" msprop:Generator_TableClassName="AppointmentsDataTable" msprop:Generator_TableVarName="tableAppointments" msprop:Generator_TablePropName="Appointments" msprop:Generator_RowDeletingName="AppointmentsRowDeleting" msprop:Generator_RowChangingName="AppointmentsRowChanging" msprop:Generator_RowEvHandlerName="AppointmentsRowChangeEventHandler" msprop:Generator_RowDeletedName="AppointmentsRowDeleted" msprop:Generator_UserTableName="Appointments" msprop:Generator_RowChangedName="AppointmentsRowChanged" msprop:Generator_RowEvArgName="AppointmentsRowChangeEvent" msprop:Generator_RowClassName="AppointmentsRow">
+        <xs:element name="Appointments" msprop:Generator_TableClassName="AppointmentsDataTable" msprop:Generator_TableVarName="tableAppointments" msprop:Generator_RowChangedName="AppointmentsRowChanged" msprop:Generator_TablePropName="Appointments" msprop:Generator_RowDeletingName="AppointmentsRowDeleting" msprop:Generator_RowChangingName="AppointmentsRowChanging" msprop:Generator_RowEvHandlerName="AppointmentsRowChangeEventHandler" msprop:Generator_RowDeletedName="AppointmentsRowDeleted" msprop:Generator_RowClassName="AppointmentsRow" msprop:Generator_UserTableName="Appointments" msprop:Generator_RowEvArgName="AppointmentsRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="UniqueID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnUniqueID" msprop:Generator_ColumnPropNameInRow="UniqueID" msprop:Generator_ColumnPropNameInTable="UniqueIDColumn" msprop:Generator_UserColumnName="UniqueID" type="xs:int" />
@@ -275,7 +300,7 @@ SELECT UniqueID, ResourceID, ResourceName, Color, Image, CustomField1 FROM Resou
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Resources" msprop:Generator_TableClassName="ResourcesDataTable" msprop:Generator_TableVarName="tableResources" msprop:Generator_TablePropName="Resources" msprop:Generator_RowDeletingName="ResourcesRowDeleting" msprop:Generator_RowChangingName="ResourcesRowChanging" msprop:Generator_RowEvHandlerName="ResourcesRowChangeEventHandler" msprop:Generator_RowDeletedName="ResourcesRowDeleted" msprop:Generator_UserTableName="Resources" msprop:Generator_RowChangedName="ResourcesRowChanged" msprop:Generator_RowEvArgName="ResourcesRowChangeEvent" msprop:Generator_RowClassName="ResourcesRow">
+        <xs:element name="Resources" msprop:Generator_TableClassName="ResourcesDataTable" msprop:Generator_TableVarName="tableResources" msprop:Generator_RowChangedName="ResourcesRowChanged" msprop:Generator_TablePropName="Resources" msprop:Generator_RowDeletingName="ResourcesRowDeleting" msprop:Generator_RowChangingName="ResourcesRowChanging" msprop:Generator_RowEvHandlerName="ResourcesRowChangeEventHandler" msprop:Generator_RowDeletedName="ResourcesRowDeleted" msprop:Generator_RowClassName="ResourcesRow" msprop:Generator_UserTableName="Resources" msprop:Generator_RowEvArgName="ResourcesRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="UniqueID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnUniqueID" msprop:Generator_ColumnPropNameInRow="UniqueID" msprop:Generator_ColumnPropNameInTable="UniqueIDColumn" msprop:Generator_UserColumnName="UniqueID" type="xs:int" />

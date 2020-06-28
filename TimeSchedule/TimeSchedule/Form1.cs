@@ -14,6 +14,7 @@ using DevExpress.XtraBars.Ribbon;
 using DevExpress.XtraBars.Helpers;
 using DevExpress.XtraScheduler;
 using System.Data.SqlClient;
+using BindIndividualSeriesRuntimeCS;
 
 namespace TimeSchedule
 {
@@ -129,6 +130,24 @@ namespace TimeSchedule
             selectUserForm.ShowDialog();
             // var achievementForm = new XtraForm1("114");
             // achievementForm.Show();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var dailyStatisticsForm5 = new Form5();
+            dailyStatisticsForm5.Show();
+        }
+
+        private void barButtonItem4_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var monthlyStatisticsForm6 = new Form6();
+            monthlyStatisticsForm6.Show();
+        }
+
+        private void barButtonItem5_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var yearlyStatisticsForm7 = new Form7();
+            yearlyStatisticsForm7.Show();
         }
     }
 }
