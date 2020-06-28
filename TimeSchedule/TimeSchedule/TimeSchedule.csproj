@@ -119,6 +119,12 @@
     <Compile Include="MonthlyStatisticsForm.designer.cs">
       <DependentUpon>MonthlyStatisticsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AchievementsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AchievementsForm.designer.cs">
+      <DependentUpon>AchievementsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="YearlyStatisticsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,12 +149,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TimeScheduleDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="AchievementsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AchievementsForm.designer.cs">
-      <DependentUpon>AchievementsForm.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +166,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MonthlyStatisticsForm.resx">
       <DependentUpon>MonthlyStatisticsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AchievementsForm.resx">
+      <DependentUpon>AchievementsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="YearlyStatisticsForm.resx">
       <DependentUpon>YearlyStatisticsForm.cs</DependentUpon>
@@ -197,9 +200,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="AchievementsForm.resx">
-      <DependentUpon>AchievementsForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="App.config" />
     <None Include="app.manifest" />
     <None Include="GanttDatabaseDataSet.xsc">

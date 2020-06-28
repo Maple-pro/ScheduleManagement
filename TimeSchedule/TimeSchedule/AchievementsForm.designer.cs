@@ -93,18 +93,18 @@
             this.tileBar.IndentBetweenItems = 10;
             this.tileBar.ItemPadding = new System.Windows.Forms.Padding(8, 6, 12, 6);
             this.tileBar.Location = new System.Drawing.Point(0, 0);
-            this.tileBar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.tileBar.Margin = new System.Windows.Forms.Padding(5);
             this.tileBar.MaxId = 3;
-            this.tileBar.MaximumSize = new System.Drawing.Size(0, 152);
-            this.tileBar.MinimumSize = new System.Drawing.Size(134, 152);
+            this.tileBar.MaximumSize = new System.Drawing.Size(0, 118);
+            this.tileBar.MinimumSize = new System.Drawing.Size(117, 118);
             this.tileBar.Name = "tileBar";
-            this.tileBar.Padding = new System.Windows.Forms.Padding(39, 15, 39, 15);
+            this.tileBar.Padding = new System.Windows.Forms.Padding(34, 12, 34, 12);
             this.tileBar.ScrollMode = DevExpress.XtraEditors.TileControlScrollMode.None;
             this.tileBar.SelectedItem = this.overviewTileBarItem;
             this.tileBar.SelectionBorderWidth = 2;
             this.tileBar.SelectionColorMode = DevExpress.XtraBars.Navigation.SelectionColorMode.UseItemBackColor;
             this.tileBar.ShowGroupText = false;
-            this.tileBar.Size = new System.Drawing.Size(1046, 152);
+            this.tileBar.Size = new System.Drawing.Size(915, 118);
             this.tileBar.TabIndex = 1;
             this.tileBar.Text = "tileBar";
             this.tileBar.WideTileWidth = 150;
@@ -144,14 +144,14 @@
             this.navigationFrame.Controls.Add(this.overviewNavigationPage);
             this.navigationFrame.Controls.Add(this.staticsNavigationPage);
             this.navigationFrame.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.navigationFrame.Location = new System.Drawing.Point(0, 152);
-            this.navigationFrame.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.navigationFrame.Location = new System.Drawing.Point(0, 118);
+            this.navigationFrame.Margin = new System.Windows.Forms.Padding(5);
             this.navigationFrame.Name = "navigationFrame";
             this.navigationFrame.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.overviewNavigationPage,
             this.staticsNavigationPage});
             this.navigationFrame.SelectedPage = this.overviewNavigationPage;
-            this.navigationFrame.Size = new System.Drawing.Size(1046, 625);
+            this.navigationFrame.Size = new System.Drawing.Size(915, 486);
             this.navigationFrame.TabIndex = 0;
             this.navigationFrame.Text = "navigationFrame";
             // 
@@ -160,9 +160,8 @@
             this.overviewNavigationPage.Caption = "overviewNavigationPage";
             this.overviewNavigationPage.Controls.Add(this.panelControl1);
             this.overviewNavigationPage.Controls.Add(this.overviewLabelControl);
-            this.overviewNavigationPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.overviewNavigationPage.Name = "overviewNavigationPage";
-            this.overviewNavigationPage.Size = new System.Drawing.Size(1195, 804);
+            this.overviewNavigationPage.Size = new System.Drawing.Size(915, 486);
             // 
             // panelControl1
             // 
@@ -172,46 +171,45 @@
             this.panelControl1.Controls.Add(this.label1);
             this.panelControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelControl1.Location = new System.Drawing.Point(0, 0);
-            this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(1195, 804);
+            this.panelControl1.Size = new System.Drawing.Size(915, 486);
             this.panelControl1.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.DarkCyan;
-            this.label4.Location = new System.Drawing.Point(15, 489);
+            this.label4.Location = new System.Drawing.Point(13, 380);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 18);
+            this.label4.Size = new System.Drawing.Size(199, 14);
             this.label4.TabIndex = 3;
-            this.label4.Text = "查看数据示图";
+            this.label4.Text = "点击此处或者上方标签查看数据示图";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(686, 437);
+            this.label3.Location = new System.Drawing.Point(600, 340);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 18);
+            this.label3.Size = new System.Drawing.Size(55, 14);
             this.label3.TabIndex = 2;
             this.label3.Text = "专注次数";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(229, 437);
+            this.label2.Location = new System.Drawing.Point(200, 340);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 18);
+            this.label2.Size = new System.Drawing.Size(55, 14);
             this.label2.TabIndex = 1;
             this.label2.Text = "注册天数";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(457, 26);
+            this.label1.Location = new System.Drawing.Point(400, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 18);
+            this.label1.Size = new System.Drawing.Size(55, 14);
             this.label1.TabIndex = 0;
             this.label1.Text = "专注天数";
             // 
@@ -227,9 +225,8 @@
             this.overviewLabelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.overviewLabelControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.overviewLabelControl.Location = new System.Drawing.Point(0, 0);
-            this.overviewLabelControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.overviewLabelControl.Name = "overviewLabelControl";
-            this.overviewLabelControl.Size = new System.Drawing.Size(1195, 804);
+            this.overviewLabelControl.Size = new System.Drawing.Size(915, 486);
             this.overviewLabelControl.TabIndex = 2;
             this.overviewLabelControl.Text = "Overview";
             // 
@@ -238,9 +235,8 @@
             this.staticsNavigationPage.Caption = "staticsNavigationPage";
             this.staticsNavigationPage.Controls.Add(this.tablePanel1);
             this.staticsNavigationPage.Controls.Add(this.staticsLabelControl);
-            this.staticsNavigationPage.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.staticsNavigationPage.Name = "staticsNavigationPage";
-            this.staticsNavigationPage.Size = new System.Drawing.Size(1195, 804);
+            this.staticsNavigationPage.Size = new System.Drawing.Size(915, 486);
             // 
             // tablePanel1
             // 
@@ -264,172 +260,157 @@
             this.tablePanel1.Controls.Add(this.labelControl1);
             this.tablePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tablePanel1.Location = new System.Drawing.Point(0, 0);
-            this.tablePanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.tablePanel1.Name = "tablePanel1";
             this.tablePanel1.Rows.AddRange(new DevExpress.Utils.Layout.TablePanelRow[] {
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F),
-            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Absolute, 26F)});
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F),
+            new DevExpress.Utils.Layout.TablePanelRow(DevExpress.Utils.Layout.TablePanelEntityStyle.Relative, 1F)});
             this.tablePanel1.ShowGrid = DevExpress.Utils.DefaultBoolean.True;
-            this.tablePanel1.Size = new System.Drawing.Size(1195, 804);
+            this.tablePanel1.Size = new System.Drawing.Size(915, 486);
             this.tablePanel1.TabIndex = 3;
             // 
             // frequentSceneLabel
             // 
             this.tablePanel1.SetColumn(this.frequentSceneLabel, 1);
-            this.frequentSceneLabel.Location = new System.Drawing.Point(169, 205);
-            this.frequentSceneLabel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.frequentSceneLabel.Location = new System.Drawing.Point(130, 389);
             this.frequentSceneLabel.Name = "frequentSceneLabel";
             this.tablePanel1.SetRow(this.frequentSceneLabel, 6);
-            this.frequentSceneLabel.Size = new System.Drawing.Size(98, 18);
+            this.frequentSceneLabel.Size = new System.Drawing.Size(84, 14);
             this.frequentSceneLabel.TabIndex = 13;
             this.frequentSceneLabel.Text = "frequent scene";
             // 
             // totalTimeLabel
             // 
             this.tablePanel1.SetColumn(this.totalTimeLabel, 1);
-            this.totalTimeLabel.Location = new System.Drawing.Point(169, 172);
-            this.totalTimeLabel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.totalTimeLabel.Location = new System.Drawing.Point(130, 328);
             this.totalTimeLabel.Name = "totalTimeLabel";
             this.tablePanel1.SetRow(this.totalTimeLabel, 5);
-            this.totalTimeLabel.Size = new System.Drawing.Size(61, 18);
+            this.totalTimeLabel.Size = new System.Drawing.Size(53, 14);
             this.totalTimeLabel.TabIndex = 12;
             this.totalTimeLabel.Text = "total time";
             // 
             // longestTimeLabel
             // 
             this.tablePanel1.SetColumn(this.longestTimeLabel, 1);
-            this.longestTimeLabel.Location = new System.Drawing.Point(169, 139);
-            this.longestTimeLabel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.longestTimeLabel.Location = new System.Drawing.Point(130, 267);
             this.longestTimeLabel.Name = "longestTimeLabel";
             this.tablePanel1.SetRow(this.longestTimeLabel, 4);
-            this.longestTimeLabel.Size = new System.Drawing.Size(79, 18);
+            this.longestTimeLabel.Size = new System.Drawing.Size(68, 14);
             this.longestTimeLabel.TabIndex = 11;
             this.longestTimeLabel.Text = "longest time";
             // 
             // maxFocusOneLabel
             // 
             this.tablePanel1.SetColumn(this.maxFocusOneLabel, 1);
-            this.maxFocusOneLabel.Location = new System.Drawing.Point(169, 106);
-            this.maxFocusOneLabel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.maxFocusOneLabel.Location = new System.Drawing.Point(130, 206);
             this.maxFocusOneLabel.Name = "maxFocusOneLabel";
             this.tablePanel1.SetRow(this.maxFocusOneLabel, 3);
-            this.maxFocusOneLabel.Size = new System.Drawing.Size(126, 18);
+            this.maxFocusOneLabel.Size = new System.Drawing.Size(101, 14);
             this.maxFocusOneLabel.TabIndex = 10;
             this.maxFocusOneLabel.Text = "max focus in a day";
             // 
             // focusDayLabel
             // 
             this.tablePanel1.SetColumn(this.focusDayLabel, 1);
-            this.focusDayLabel.Location = new System.Drawing.Point(169, 73);
-            this.focusDayLabel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.focusDayLabel.Location = new System.Drawing.Point(130, 145);
             this.focusDayLabel.Name = "focusDayLabel";
             this.tablePanel1.SetRow(this.focusDayLabel, 2);
-            this.focusDayLabel.Size = new System.Drawing.Size(64, 18);
+            this.focusDayLabel.Size = new System.Drawing.Size(52, 14);
             this.focusDayLabel.TabIndex = 9;
             this.focusDayLabel.Text = "focus day";
             // 
             // focusTimeLabel
             // 
             this.tablePanel1.SetColumn(this.focusTimeLabel, 1);
-            this.focusTimeLabel.Location = new System.Drawing.Point(169, 40);
-            this.focusTimeLabel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.focusTimeLabel.Location = new System.Drawing.Point(130, 84);
             this.focusTimeLabel.Name = "focusTimeLabel";
             this.tablePanel1.SetRow(this.focusTimeLabel, 1);
-            this.focusTimeLabel.Size = new System.Drawing.Size(68, 18);
+            this.focusTimeLabel.Size = new System.Drawing.Size(57, 14);
             this.focusTimeLabel.TabIndex = 8;
             this.focusTimeLabel.Text = "focus time";
             // 
             // registerTimeLabel
             // 
             this.tablePanel1.SetColumn(this.registerTimeLabel, 1);
-            this.registerTimeLabel.Location = new System.Drawing.Point(169, 7);
-            this.registerTimeLabel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.registerTimeLabel.Location = new System.Drawing.Point(130, 23);
             this.registerTimeLabel.Name = "registerTimeLabel";
             this.tablePanel1.SetRow(this.registerTimeLabel, 0);
-            this.registerTimeLabel.Size = new System.Drawing.Size(81, 18);
+            this.registerTimeLabel.Size = new System.Drawing.Size(69, 14);
             this.registerTimeLabel.TabIndex = 7;
             this.registerTimeLabel.Text = "register time";
             // 
             // labelControl7
             // 
             this.tablePanel1.SetColumn(this.labelControl7, 0);
-            this.labelControl7.Location = new System.Drawing.Point(3, 205);
-            this.labelControl7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl7.Location = new System.Drawing.Point(3, 389);
             this.labelControl7.Name = "labelControl7";
             this.tablePanel1.SetRow(this.labelControl7, 6);
-            this.labelControl7.Size = new System.Drawing.Size(90, 18);
+            this.labelControl7.Size = new System.Drawing.Size(72, 14);
             this.labelControl7.TabIndex = 6;
-            this.labelControl7.Text = "最常专注场景";
+            this.labelControl7.Text = "最常专注主题";
             // 
             // labelControl6
             // 
             this.tablePanel1.SetColumn(this.labelControl6, 0);
-            this.labelControl6.Location = new System.Drawing.Point(3, 172);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl6.Location = new System.Drawing.Point(3, 328);
             this.labelControl6.Name = "labelControl6";
             this.tablePanel1.SetRow(this.labelControl6, 5);
-            this.labelControl6.Size = new System.Drawing.Size(90, 18);
+            this.labelControl6.Size = new System.Drawing.Size(72, 14);
             this.labelControl6.TabIndex = 5;
             this.labelControl6.Text = "累计专注时长";
             // 
             // labelControl5
             // 
             this.tablePanel1.SetColumn(this.labelControl5, 0);
-            this.labelControl5.Location = new System.Drawing.Point(3, 139);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl5.Location = new System.Drawing.Point(3, 267);
             this.labelControl5.Name = "labelControl5";
             this.tablePanel1.SetRow(this.labelControl5, 4);
-            this.labelControl5.Size = new System.Drawing.Size(90, 18);
+            this.labelControl5.Size = new System.Drawing.Size(72, 14);
             this.labelControl5.TabIndex = 4;
             this.labelControl5.Text = "最长专注时间";
             // 
             // labelControl4
             // 
             this.tablePanel1.SetColumn(this.labelControl4, 0);
-            this.labelControl4.Location = new System.Drawing.Point(3, 106);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl4.Location = new System.Drawing.Point(3, 206);
             this.labelControl4.Name = "labelControl4";
             this.tablePanel1.SetRow(this.labelControl4, 3);
-            this.labelControl4.Size = new System.Drawing.Size(120, 18);
+            this.labelControl4.Size = new System.Drawing.Size(96, 14);
             this.labelControl4.TabIndex = 3;
             this.labelControl4.Text = "单天最多专注次数";
             // 
             // labelControl3
             // 
             this.tablePanel1.SetColumn(this.labelControl3, 0);
-            this.labelControl3.Location = new System.Drawing.Point(3, 73);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl3.Location = new System.Drawing.Point(3, 145);
             this.labelControl3.Name = "labelControl3";
             this.tablePanel1.SetRow(this.labelControl3, 2);
-            this.labelControl3.Size = new System.Drawing.Size(60, 18);
+            this.labelControl3.Size = new System.Drawing.Size(48, 14);
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "专注天数";
             // 
             // labelControl2
             // 
             this.tablePanel1.SetColumn(this.labelControl2, 0);
-            this.labelControl2.Location = new System.Drawing.Point(3, 40);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl2.Location = new System.Drawing.Point(3, 84);
             this.labelControl2.Name = "labelControl2";
             this.tablePanel1.SetRow(this.labelControl2, 1);
-            this.labelControl2.Size = new System.Drawing.Size(60, 18);
+            this.labelControl2.Size = new System.Drawing.Size(48, 14);
             this.labelControl2.TabIndex = 1;
             this.labelControl2.Text = "专注次数";
             // 
             // labelControl1
             // 
             this.tablePanel1.SetColumn(this.labelControl1, 0);
-            this.labelControl1.Location = new System.Drawing.Point(3, 7);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.labelControl1.Location = new System.Drawing.Point(3, 23);
             this.labelControl1.Name = "labelControl1";
             this.tablePanel1.SetRow(this.labelControl1, 0);
-            this.labelControl1.Size = new System.Drawing.Size(60, 18);
+            this.labelControl1.Size = new System.Drawing.Size(48, 14);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "注册时间";
             // 
@@ -445,9 +426,8 @@
             this.staticsLabelControl.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
             this.staticsLabelControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.staticsLabelControl.Location = new System.Drawing.Point(0, 0);
-            this.staticsLabelControl.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.staticsLabelControl.Name = "staticsLabelControl";
-            this.staticsLabelControl.Size = new System.Drawing.Size(1195, 804);
+            this.staticsLabelControl.Size = new System.Drawing.Size(915, 486);
             this.staticsLabelControl.TabIndex = 2;
             this.staticsLabelControl.Text = "Statics";
             // 
@@ -465,14 +445,13 @@
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1046, 777);
+            this.ClientSize = new System.Drawing.Size(915, 604);
             this.Controls.Add(this.navigationFrame);
             this.Controls.Add(this.tileBar);
             this.HtmlText = "Achievement";
             this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("XtraForm1.IconOptions.LargeImage")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "XtraForm1";
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).EndInit();
             this.navigationFrame.ResumeLayout(false);
