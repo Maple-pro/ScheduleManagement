@@ -474,7 +474,6 @@
             this.IconOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("XtraForm1.IconOptions.LargeImage")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "XtraForm1";
-            this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).EndInit();
             this.navigationFrame.ResumeLayout(false);
             this.overviewNavigationPage.ResumeLayout(false);
