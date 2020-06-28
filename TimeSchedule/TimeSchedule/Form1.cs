@@ -126,7 +126,7 @@ namespace TimeSchedule
         private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
         {
             var selectUserForm = new Form4();
-            selectUserForm.Show();
+            selectUserForm.ShowDialog();
             // var achievementForm = new XtraForm1("114");
             // achievementForm.Show();
         }
