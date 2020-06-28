@@ -1,6 +1,6 @@
 ﻿namespace TimeSchedule
 {
-    partial class Form4
+    partial class SelectUserForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectUserForm));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.checkedListBoxControl1 = new DevExpress.XtraEditors.CheckedListBoxControl();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();

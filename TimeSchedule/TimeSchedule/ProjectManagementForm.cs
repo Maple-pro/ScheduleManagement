@@ -12,11 +12,11 @@ using System.Data.SqlClient;
 
 namespace TimeSchedule
 {
-    public partial class Form2 : Form
+    public partial class ProjectManagementForm : Form
     {
         private int LastSplitContainerControlSplitterPosition;
 
-        public Form2()
+        public ProjectManagementForm()
         {
             InitializeComponent();
        

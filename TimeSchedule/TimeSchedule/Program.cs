@@ -19,7 +19,7 @@ namespace TimeSchedule
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.UserSkins.BonusSkins.Register();
 
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
     }
 }

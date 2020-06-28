@@ -18,9 +18,9 @@ using BindIndividualSeriesRuntimeCS;
 
 namespace TimeSchedule
 {
-    public partial class Form1 : RibbonForm
+    public partial class MainForm : RibbonForm
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             schedulerControl.Start = System.DateTime.Now;
@@ -80,13 +80,13 @@ namespace TimeSchedule
 
         private void barButtonItem1_ItemClick_1(object sender, ItemClickEventArgs e)
         {
-            var form2 = new Form2();
+            var form2 = new ProjectManagementForm();
             form2.Show();
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)
         {
-            var accountManagement = new Form3();
+            var accountManagement = new CreateUserForm();
             accountManagement.ShowDialog();
         }
 
@@ -126,7 +126,7 @@ namespace TimeSchedule
 
         private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
         {
-            var selectUserForm = new Form4();
+            var selectUserForm = new SelectUserForm();
             selectUserForm.ShowDialog();
             // var achievementForm = new XtraForm1("114");
             // achievementForm.Show();

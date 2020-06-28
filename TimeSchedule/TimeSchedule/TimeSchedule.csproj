@@ -83,47 +83,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2.cs">
+    <Compile Include="ProjectManagementForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2.Designer.cs">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <Compile Include="ProjectManagementForm.Designer.cs">
+      <DependentUpon>ProjectManagementForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
+    <Compile Include="CreateUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <Compile Include="CreateUserForm.Designer.cs">
+      <DependentUpon>CreateUserForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form4.cs">
+    <Compile Include="SelectUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="SelectUserForm.Designer.cs">
+      <DependentUpon>SelectUserForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form5.cs">
+    <Compile Include="DailyStatisticsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form5.designer.cs">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <Compile Include="DailyStatisticsForm.designer.cs">
+      <DependentUpon>DailyStatisticsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form6.cs">
+    <Compile Include="MonthlyStatisticsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form6.designer.cs">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <Compile Include="MonthlyStatisticsForm.designer.cs">
+      <DependentUpon>MonthlyStatisticsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form7.cs">
+    <Compile Include="YearlyStatisticsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form7.designer.cs">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <Compile Include="YearlyStatisticsForm.designer.cs">
+      <DependentUpon>YearlyStatisticsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="GanttDatabaseDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -143,32 +143,32 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TimeScheduleDBDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="XtraForm1.cs">
+    <Compile Include="AchievementsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="XtraForm1.designer.cs">
-      <DependentUpon>XtraForm1.cs</DependentUpon>
+    <Compile Include="AchievementsForm.designer.cs">
+      <DependentUpon>AchievementsForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form2.resx">
-      <DependentUpon>Form2.cs</DependentUpon>
+    <EmbeddedResource Include="ProjectManagementForm.resx">
+      <DependentUpon>ProjectManagementForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
+    <EmbeddedResource Include="CreateUserForm.resx">
+      <DependentUpon>CreateUserForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form4.resx">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <EmbeddedResource Include="SelectUserForm.resx">
+      <DependentUpon>SelectUserForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form5.resx">
-      <DependentUpon>Form5.cs</DependentUpon>
+    <EmbeddedResource Include="DailyStatisticsForm.resx">
+      <DependentUpon>DailyStatisticsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form6.resx">
-      <DependentUpon>Form6.cs</DependentUpon>
+    <EmbeddedResource Include="MonthlyStatisticsForm.resx">
+      <DependentUpon>MonthlyStatisticsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form7.resx">
-      <DependentUpon>Form7.cs</DependentUpon>
+    <EmbeddedResource Include="YearlyStatisticsForm.resx">
+      <DependentUpon>YearlyStatisticsForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OutlookAppointmentForm.de.resx">
       <DependentUpon>OutlookAppointmentForm.cs</DependentUpon>
@@ -197,8 +197,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="XtraForm1.resx">
-      <DependentUpon>XtraForm1.cs</DependentUpon>
+    <EmbeddedResource Include="AchievementsForm.resx">
+      <DependentUpon>AchievementsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="app.manifest" />
@@ -251,15 +251,15 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="GanttDatabase_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>GanttDatabase.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TimeScheduleDB.mdf">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="TimeScheduleDB_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>TimeScheduleDB.mdf</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

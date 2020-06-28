@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace TimeSchedule
 {
-    public partial class Form4 : Form
+    public partial class SelectUserForm : Form
     {
         Dictionary<string, int> namesToIds = new Dictionary<string, int>();
 
-        public Form4()
+        public SelectUserForm()
         {
             InitializeComponent();
 
@@ -61,7 +61,7 @@ namespace TimeSchedule
             }
 
             var userId = namesToIds[userName];
-            var achievementForm = new XtraForm1(userId.ToString());
+            var achievementForm = new AchievementsForm(userId.ToString());
             achievementForm.Show();
             Close();
 

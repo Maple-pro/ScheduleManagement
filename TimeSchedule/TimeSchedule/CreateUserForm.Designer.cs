@@ -1,6 +1,6 @@
 ﻿namespace TimeSchedule
 {
-    partial class Form3
+    partial class CreateUserForm
     {
         /// <summary>
         /// Required designer variable.

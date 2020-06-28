@@ -1,6 +1,6 @@
 ﻿namespace TimeSchedule
 {
-    partial class XtraForm1
+    partial class AchievementsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             this.components = new System.ComponentModel.Container();
             DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(XtraForm1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AchievementsForm));
             this.tileBar = new DevExpress.XtraBars.Navigation.TileBar();
             this.tileBarGroupTables = new DevExpress.XtraBars.Navigation.TileBarGroup();
             this.overviewTileBarItem = new DevExpress.XtraBars.Navigation.TileBarItem();

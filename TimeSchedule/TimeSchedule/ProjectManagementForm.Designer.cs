@@ -1,6 +1,6 @@
 ﻿namespace TimeSchedule
 {
-    partial class Form2
+    partial class ProjectManagementForm
     {
         /// <summary>
         /// Required designer variable.

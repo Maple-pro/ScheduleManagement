@@ -123,13 +123,8 @@ D:\VSWorkspace\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.csproj.CopyCompl
 D:\VSWorkspace\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.exe
 D:\VSWorkspace\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.pdb
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.csprojAssemblyReference.cache
-D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.Form1.resources
-D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.Form2.resources
-D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.Form3.resources
-D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.Form4.resources
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.OutlookAppointmentForm.resources
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.Properties.Resources.resources
-D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.XtraForm1.resources
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.OutlookAppointmentForm.de.resources
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.OutlookAppointmentForm.es.resources
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.OutlookAppointmentForm.ja.resources
@@ -137,10 +132,6 @@ D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.csproj.GenerateResource.cache
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.exe.licenses
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.csproj.CoreCompileInputs.cache
-D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\bin\Debug\GanttDatabase.mdf
-D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\bin\Debug\GanttDatabase_log.ldf
-D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\bin\Debug\TimeScheduleDB.mdf
-D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\bin\Debug\TimeScheduleDB_log.ldf
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\bin\Debug\TimeSchedule.exe.config
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\bin\Debug\TimeSchedule.exe
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\bin\Debug\TimeSchedule.pdb
@@ -303,3 +294,12 @@ D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\BindIndividualSeriesRuntimeCS.Form5.resources
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\BindIndividualSeriesRuntimeCS.Form6.resources
 D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\BindIndividualSeriesRuntimeCS.Form7.resources
+D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.MainForm.resources
+D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.ProjectManagementForm.resources
+D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.CreateUserForm.resources
+D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.SelectUserForm.resources
+D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\obj\Debug\TimeSchedule.AchievementsForm.resources
+D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\bin\Debug\GanttDatabase.mdf
+D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\bin\Debug\GanttDatabase_log.ldf
+D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\bin\Debug\TimeScheduleDB.mdf
+D:\Workspace\ScheduleManagement\TimeSchedule\TimeSchedule\bin\Debug\TimeScheduleDB_log.ldf

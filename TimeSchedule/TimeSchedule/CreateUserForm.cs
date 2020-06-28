@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace TimeSchedule
 {
-    public partial class Form3 : Form
+    public partial class CreateUserForm : Form
     {
-        public Form3()
+        public CreateUserForm()
         {
             InitializeComponent();
         }

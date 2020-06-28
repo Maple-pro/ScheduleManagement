@@ -11,11 +11,11 @@ using DevExpress.XtraEditors;
 
 namespace TimeSchedule
 {
-    public partial class XtraForm1 : DevExpress.XtraEditors.XtraForm
+    public partial class AchievementsForm : DevExpress.XtraEditors.XtraForm
     {
         readonly string resID = " is null";
         private Graphics graphics;
-        public XtraForm1(String resID)
+        public AchievementsForm(String resID)
         {
             InitializeComponent();
             
